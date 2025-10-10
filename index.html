@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Hussain - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-bracket">&lt;</span>YH<span class="brand-bracket">/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center text-white">
+        <div class="particles-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="display-4 glitch" data-text="Youssef Hussain">Youssef Hussain</h1>
+                <div class="typing-container">
+                    <p class="lead typing-text">AI Engineer & Data Scientist</p>
+                    <span class="cursor"></span>
+                </div>
+                <div class="mt-5 hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-lg me-3">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="youssef_hussain_cv_d.pdf" class="btn btn-secondary btn-lg" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I'm a Computer Science graduate with a passion for AI Engineering and machine learning. I'm skilled in Python, SQL, and Cloud solutions, with proven experience in end-to-end model development, deployment, and data analysis.</p>
+                    <p>My journey in technology is driven by curiosity and a commitment to continuous learning. I thrive on transforming complex problems into elegant, efficient solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <h5 class="card-title">AI Engineer Intern</h5>
+                                <span class="company-badge">Cyber Talents</span>
+                            </div>
+                            <p class="card-subtitle mb-3 text-muted">3 Month Internship • 2025</p>
+                            <ul>
+                                <li>Built a large language model (LLM) pipeline from scratch to automate the generation of CTF writeups.</li>
+                                <li>Processed raw CTF writeups: cleaning, formatting, and structuring into usable datasets.</li>
+                                <li>Applied data augmentation, model selection, fine-tuning, and PEFT techniques.</li>
+                                <li>Deployed the trained LLM for automated writeup generation, improving efficiency in cybersecurity reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <h5 class="card-title">Embedded Linux Engineer Intern</h5>
+                                <span class="company-badge">El Sewedy Electric</span>
+                            </div>
+                            <p class="card-subtitle mb-3 text-muted">2 Month Internship • 2025</p>
+                            <ul>
+                                <li>Automated the calibration process for electric meter test benches using Python scripts, significantly reducing manual testing time and improving data accuracy.</li>
+                                <li>Developed and executed Bash scripts for system administration and process management in an embedded Linux environment.</li>
+                                <li>Interfaced with hardware devices using communication protocols (UART, I2C, SPI) and built foundational REST APIs with Python for device interaction.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="card-body">
+                            <div class="experience-header">
+                                <h5 class="card-title">Network Security Intern</h5>
+                                <span class="company-badge">Optima Professional Services</span>
+                            </div>
+                            <p class="card-subtitle mb-3 text-muted">1-Month Internship • 2025</p>
+                            <ul>
+                                <li>Performed as a SOC Analyst in a CTF simulation, actively monitoring firewall logs to detect and report intrusion attempts in real-time.</li>
+                                <li>Configured and deployed firewall policies on Palo Alto networks to isolate threats and secure critical network zones.</li>
+                                <li>Executed Red Team operations by conducting scans, exploiting identified attack vectors.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AI-Powered Auction Backend</h5>
+                            <p class="card-text">A scalable Node.js backend for an online auction/e-commerce platform with an integrated LLM (Large Language Model) as a RAG chatbot.</p>
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">LLM</span>
+                                <span class="tag">RAG</span>
+                            </div>
+                            <a href="https://github.com/youssefescobar/BeMazady2" class="btn btn-primary mt-3" target="_blank">
+                                View Project <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">CTF Writeup LLM</h5>
+                            <p class="card-text">An end-to-end LLM pipeline to automate CTF challenge writeups, demonstrating expertise in data preparation, LLM fine-tuning, and deployment.</p>
+                            <div class="project-tags">
+                                <span class="tag">RAG</span>
+                                <span class="tag">LLM</span>
+                                <span class="tag">PEFT</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">
+                                Closed Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card">
+                        <div class="card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel WhatsApp AI Agent</h5>
+                            <p class="card-text">A conversational AI agent for a hotel, accessible via WhatsApp, that can answer FAQs, query databases for room availability, and handle secure bookings.</p>
+                            <div class="project-tags">
+                                <span class="tag">LLM</span>
+                                <span class="tag">RAG</span>
+                                <span class="tag">Langchain</span>
+                                <span class="tag">Langgraph</span>
+                                <span class="tag">Pydantic</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3" target="_blank">
+                                View Project <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card project-card">
+                        <div class="card-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AI Fitness & Nutrition Planner</h5>
+                            <p class="card-text">A tool built with LangChain, Pydantic, and Google Gemini to generate custom workout and nutrition plans with a conversational agent for follow-up questions.</p>
+                            <div class="project-tags">
+                                <span class="tag">LangChain</span>
+                                <span class="tag">Pydantic</span>
+                                <span class="tag">Gemini</span>
+                            </div>
+                            <a href="https://github.com/youssefescobar/Coach-Ai" class="btn btn-primary mt-3" target="_blank">
+                                View Project <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Programming & Scripting</h5>
+                            <p class="card-text">Python (Pandas, NumPy, Scikit-learn), SQL, JavaScript, HTML, CSS, Bash, C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Supervised/Unsupervised Learning, Feature Engineering, Model Selection, Hyperparameter Tuning, Cross-validation, Ensemble Methods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Deep Learning & AI</h5>
+                            <p class="card-text">Neural Networks, CNNs, RNNs, Transformers, LLMs, Fine-tuning, Transfer Learning, PyTorch, TensorFlow, RAG, LangChain, Langgraph, Pydantic, PEFT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Databases & Backend</h5>
+                            <p class="card-text">PostgreSQL, MySQL, MongoDB, Prisma, Database Design, Data Warehousing, REST APIs, FastAPI, Express.js, Docker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis & Visualization</h5>
+                            <p class="card-text">Data Cleaning, Preprocessing, EDA, Statistical Analysis, Power BI, Excel, Matplotlib, Seaborn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tools & Technologies</h5>
+                            <p class="card-text">Git, Linux, Cloud Services (AWS), Virtualization, Automation (n8n)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <p class="lead text-center mb-5">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h5>Phone</h5>
+                            <p>+201115771844</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5>Email</h5>
+                            <p><a href="mailto:youssef.hussain9000@gmail.com">youssef.hussain9000@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <div class="social-links mb-4">
+                <a href="https://www.linkedin.com/in/youssef-hussain-salem/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/yousseff_hussainn/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/201115771844" target="_blank" class="social-icon" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <p class="mb-0">&copy; 2025 Youssef Hussain. Crafted with <i class="fas fa-heart text-danger"></i></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
