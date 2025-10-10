@@ -794,7 +794,7 @@ footer p {
         padding: 0.8rem 2rem;
         font-size: 1rem;
         display: block;
-        margin: 0.5rem auto;
+        margin: 0.5rem auto !important;
         width: 80%;
     }
 
