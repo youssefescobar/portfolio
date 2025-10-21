@@ -596,6 +596,29 @@ body {
     box-shadow: 0 5px 20px rgba(255, 65, 108, 0.4);
 }
 
+/* Blog Cards */
+.blog-card {
+    position: relative;
+}
+
+.blog-card:hover .card-icon {
+    transform: rotateY(360deg);
+}
+
+.blog-card .btn-primary {
+    background: linear-gradient(135deg, var(--secondary-color), #ff6b9d);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.blog-card .btn-primary:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(255, 65, 108, 0.4);
+}
+
 /* Skills Cards */
 .skill-card .skill-icon {
     width: 70px;
