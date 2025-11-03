@@ -1,14 +1,14 @@
 /* Root Variables */
 :root {
-    --primary-color: #00f0ff;
-    --secondary-color: #ff416c;
-    --accent-color: #8a2be2;
-    --bg-dark: #0a0a1a;
-    --bg-card: #1a1a2e;
-    --bg-card-hover: #252541;
-    --text-light: #e0e0e0;
-    --text-muted: #b0b0b0;
-    --border-color: #3a3a5a;
+    --primary-color: #4c8cff; /* A vibrant, accessible blue */
+    --secondary-color: #f92672; /* A punchy, energetic pink/magenta */
+    --accent-color: #fd971f; /* A warm orange for highlights */
+    --bg-dark: #191c24; /* A deep, dark charcoal */
+    --bg-card: #232834; /* A slightly lighter dark gray for cards */
+    --bg-card-hover: #2c3241; /* A subtle hover effect for cards */
+    --text-light: #f8f8f2; /* A soft, off-white for main text */
+    --text-muted: #a9b1d6; /* A muted, grayish-blue for secondary text */
+    --border-color: #414863; /* A defined but not harsh border color */
 }
 
 /* General Styles */
@@ -431,6 +431,7 @@ body {
     left: 50%;
     margin-left: -2px;
     border-radius: 2px;
+    z-index: 1;
 }
 
 .timeline-item {
@@ -438,6 +439,7 @@ body {
     position: relative;
     background-color: inherit;
     width: 50%;
+    z-index: 2;
 }
 
 .timeline-item::after {
@@ -450,7 +452,6 @@ body {
     border: 4px solid var(--bg-dark);
     top: 25px;
     border-radius: 50%;
-    z-index: 1;
     box-shadow: 0 0 20px var(--primary-color);
     animation: pulse 2s infinite;
 }
