@@ -152,9 +152,35 @@ export function Experience() {
                 
                 {/* Enhanced Timeline dot with pulsing animation */}
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
-                  <div className="relative">
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.15 + 0.3,
+                      type: "spring",
+                      stiffness: 200,
+                      damping: 15
+                    }}
+                    className="relative"
+                  >
+                    {/* Expanding ring from line */}
+                    <motion.div
+                      initial={{ scale: 0, opacity: 1 }}
+                      whileInView={{ scale: 2, opacity: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.8,
+                        delay: index * 0.15 + 0.3,
+                        ease: "easeOut"
+                      }}
+                      className="absolute inset-0 w-6 h-6 bg-primary rounded-full"
+                      style={{ transform: "translate(-50%, -50%)" }}
+                    />
                     {/* Outer pulsing ring */}
                     <motion.div
+                      initial={{ scale: 0 }}
                       animate={{
                         scale: [1, 1.5, 1],
                         opacity: [0.5, 0, 0.5],
@@ -163,16 +189,38 @@ export function Experience() {
                         duration: 2,
                         repeat: Infinity,
                         ease: "easeInOut",
+                        delay: index * 0.15 + 0.8
                       }}
                       className="absolute inset-0 w-6 h-6 bg-primary rounded-full blur-sm"
                     />
                     {/* Main dot */}
-                    <div className="relative w-5 h-5 bg-gradient-to-br from-primary to-secondary rounded-full border-4 border-background shadow-lg shadow-primary/50">
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.4,
+                        delay: index * 0.15 + 0.4,
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20
+                      }}
+                      className="relative w-5 h-5 bg-gradient-to-br from-primary to-secondary rounded-full border-4 border-background shadow-lg shadow-primary/50"
+                    >
                       <div className="absolute inset-0 bg-primary rounded-full animate-ping opacity-20" />
-                    </div>
+                    </motion.div>
                     {/* Inner glow */}
-                    <div className="absolute inset-0 bg-primary/50 rounded-full blur-md" />
-                  </div>
+                    <motion.div
+                      initial={{ scale: 0, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.5,
+                        delay: index * 0.15 + 0.5
+                      }}
+                      className="absolute inset-0 bg-primary/50 rounded-full blur-md"
+                    />
+                  </motion.div>
                 </div>
               </motion.div>
             ))}
