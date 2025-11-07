@@ -86,22 +86,24 @@ export function Experience() {
 
           <div className="space-y-16">
             {experiences.map((exp, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100, scale: 0.9 }}
-                whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: index * 0.15,
-                  type: "spring",
-                  stiffness: 100
-                }}
                 className={`relative flex items-start md:items-center ${
                   index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
-                <div className={`w-full md:w-[48%] ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
+                <motion.div
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100, scale: 0.9 }}
+                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ 
+                    duration: 0.8, 
+                    delay: index * 0.15,
+                    type: "spring",
+                    stiffness: 100
+                  }}
+                  className={`w-full md:w-[48%] ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}
+                >
                   <Card className="border-primary/20 hover:border-primary/60 transition-all duration-500 group relative overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
                     {/* Gradient overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/0 group-hover:via-primary/5 group-hover:to-primary/10 transition-all duration-500 pointer-events-none" />
@@ -148,7 +150,7 @@ export function Experience() {
                       </ul>
                     </CardContent>
                   </Card>
-                </div>
+                </motion.div>
                 
                 {/* Enhanced Timeline dot with pulsing animation */}
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center justify-center">
@@ -222,7 +224,7 @@ export function Experience() {
                     />
                   </motion.div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -35,11 +35,12 @@ const projects: Project[] = [
   },
   {
     title: "Hotel WhatsApp AI Agent",
-    description: "A conversational AI agent for a hotel, accessible via WhatsApp, that can answer FAQs, query databases for room availability, and handle secure bookings.",
+    description: "A conversational AI agent for a hotel, accessible via WhatsApp, that can answer FAQs, query databases for room availability, and handle secure bookings. over engineering at its finest",
     tags: ["Supabase", "Langchain", "Langgraph", "Pydantic", "Meta Api integration"],
     link: "#",
     icon: <MessageSquare className="h-8 w-8" />,
     linkText: "Closed source",
+    blogLink: "https://medium.com/@youssef.hussain9000/building-a-production-grade-elt-pipeline-from-raw-data-to-business-intelligence-f444b398284a",
   },
   {
     title: "AI Fitness & Nutrition Planner",
@@ -51,7 +52,7 @@ const projects: Project[] = [
   },
   {
     title: "Simple Data Warehouse",
-    description: "A simple ELT pipeline and a warehouse using Docker, Airflow, DBT, Postgres, and Medallion Architecture. A realistic prod db was also made to pull data from.",
+    description: "A simple ELT pipeline and a warehouse using Docker, Airflow, DBT, Postgres, and Medallion Architecture. A realistic prod db was also made to pull data from. the elt warehouse blog post",
     tags: ["Docker", "Airflow", "DBT", "PostgreSQL"],
     link: "https://github.com/youssefescobar/simple-data-warehouse",
     icon: <Warehouse className="h-8 w-8" />,
@@ -164,7 +165,7 @@ export function Projects() {
                       asChild
                     >
                       <a href={project.blogLink} target="_blank" rel="noopener noreferrer">
-                        Blog Post
+                        View Blog
                         <ExternalLink className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                       </a>
                     </Button>
