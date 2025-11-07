@@ -87,7 +87,7 @@ export function Hero() {
               className="text-base px-8 py-6"
               asChild
             >
-              <a href="/youssef_hussain_cv_d.pdf" download>
+              <a href="/youssef_cv.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </a>

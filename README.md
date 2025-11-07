@@ -32,7 +32,7 @@ pnpm install
 2. Move the CV file to the public folder:
 
 ```bash
-cp youssef_hussain_cv_d.pdf public/
+cp youssef_cv public/
 ```
 
 3. Run the development server:
