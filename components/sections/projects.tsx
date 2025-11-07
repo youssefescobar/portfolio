@@ -13,6 +13,7 @@ interface Project {
   link: string;
   icon: React.ReactNode;
   linkText?: string;
+  blogLink?: string;
 }
 
 const projects: Project[] = [
@@ -55,6 +56,7 @@ const projects: Project[] = [
     link: "https://github.com/youssefescobar/simple-data-warehouse",
     icon: <Warehouse className="h-8 w-8" />,
     linkText: "View Project",
+    blogLink: "https://medium.com/@youssef.hussain9000/building-a-production-grade-elt-pipeline-from-raw-data-to-business-intelligence-f444b398284a",
   },
   {
     title: "Ciphers",
@@ -72,14 +74,7 @@ const projects: Project[] = [
     icon: <Network className="h-8 w-8" />,
     linkText: "View Project",
   },
-  {
-    title: "ELT Pipeline with PostgreSQL and Docker",
-    description: "An ELT (Extract, Load, Transform) pipeline using Docker containers to manage two PostgreSQL databases and a Python script to handle the data movement.",
-    tags: ["Docker", "PostgreSQL", "Python", "ELT"],
-    link: "https://github.com/youssefescobar/simple-elt-pipeline",
-    icon: <Database className="h-8 w-8" />,
-    linkText: "View Project",
-  },
+
 ];
 
 export function Projects() {
@@ -149,7 +144,7 @@ export function Projects() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="relative z-10">
+                <CardFooter className="relative z-10 flex gap-2">
                   <Button
                     variant={project.link === "#" ? "outline" : "default"}
                     className="w-full group/btn"
@@ -162,6 +157,18 @@ export function Projects() {
                       )}
                     </a>
                   </Button>
+                  {project.blogLink && (
+                    <Button
+                      variant="outline"
+                      className="w-full group/btn"
+                      asChild
+                    >
+                      <a href={project.blogLink} target="_blank" rel="noopener noreferrer">
+                        Blog Post
+                        <ExternalLink className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </a>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             </motion.div>

@@ -877,3 +877,16 @@ footer p {
         height: 45px;
     }
 }
+
+.scroll-top-btn i {
+    position: relative;
+    top: 15px;
+}
+
+.card-icon,
+.skill-icon,
+.contact-icon,
+.social-icon {
+    position: relative;
+    top: 15px;
+}
