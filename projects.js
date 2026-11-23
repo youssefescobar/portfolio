@@ -42,10 +42,10 @@ const PROJECTS = [
     metrics: [{ value: 1, suffix: " tap", label: "To send an SOS" }, { value: 2, suffix: "", label: "Roles in one app" }, { value: 5, suffix: "", label: "Ways to reach the group" }],
   },
   {
-    slug: "durrah", name: "Durrah Al Munawwara", kind: "Transport website and AI chatbot", year: 2026, hue: 22,
+    slug: "durrah", name: "Durrah Al Munawwara", kind: "Transport website and AI assistant", year: 2026, hue: 22,
     logo: "logos/durrah.svg", role: "Full-stack developer", duration: "2026", status: "Live",
     links: [{ label: "munawwara.com", url: "https://www.munawwara.com" }],
-    summary: "A website and AI assistant for a Saudi transport company. Durra, the chatbot, answers customers around the clock, takes complaints and job applications, and hands the chat to a real person when needed.",
+    summary: "A website and AI assistant for a Saudi transport company. Durra, the AI assistant, answers customers around the clock, takes complaints and job applications, and hands the chat to a real person when needed.",
     stack: ["Next.js", "React", "Node.js", "GSAP"],
     shots: [
       { src: "shots/durrah-2.jpg", alt: "munawwara.com home page", kind: "desktop", url: "munawwara.com" },
